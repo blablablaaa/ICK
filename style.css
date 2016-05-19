@@ -32,6 +32,20 @@ body
   right: 0%;
 }
 
+#time
+{
+  position: fixed;
+  left: 13.5%;
+  z-index: 100;
+}
+
+#temp
+{
+  position: fixed;
+  right: 13.5%;
+  z-index: 100;
+}
+
 .buttony
 {
   text-align: center;
@@ -48,9 +62,36 @@ body
   font-weight: bold;
 }
 
+.buttony-radio
+{
+  text-align: center;
+  vertical-align: middle;
+  width: 23%;
+  border-radius: 20%;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 15px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 5%;
+}
+
 #button-radio
 {
   background-color: #FF9393;
+}
+
+#button-radio-1
+{
+  left:15%;
+}
+#button-radio-2
+{
+  left:39%;
+}
+#button-radio-3
+{
+  left:63%;
 }
 
 .screen
@@ -68,20 +109,6 @@ body
   display: block;
 }
 
-#time
-{
-  position: fixed;
-  left: 13.5%;
-  z-index: 100;
-}
-
-#temp
-{
-  position: fixed;
-  right: 13.5%;
-  z-index: 100;
-}
-
 .radio-screen
 {
   text-align: center;
@@ -90,8 +117,31 @@ body
 
 #radio-station
 {
-  margin-left: 19%;
+  margin-left: 12%;
   margin-top: 30%;
   font-size: 40px;
   font-weight: bold;
+}
+
+#info
+{
+  display: none;
+  z-index: 500;
+  width: 90%;
+  height: 90%;
+  position: fixed;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #FF9393;
+  left: 5%;
+  top: 5%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 45px;
+  opacity: 0.8;
+}
+
+#info-sub
+{
+  margin-top: 20%
 }
