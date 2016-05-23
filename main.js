@@ -122,12 +122,12 @@ function mainFunctions()
 
   $("#button-radio-1").click(function()
   {
-    $("#radio-station").text("UNKNO." +" - FM "+(Number((Math.random() * (110.0 - 87.0) + 87.0).toFixed(2)))+ " mHz");
+    $("#radio-station").text("UNKNOWN" +" - FM "+(Number((Math.random() * (110.0 - 87.0) + 87.0).toFixed(2)))+ " mHz");
   });
 
   $("#button-radio-2").click(function()
   {
-    $("#radio-station").text("UNKNO." +" - FM "+(Number((Math.random() * (110.0 - 87.0) + 87.0).toFixed(2)))+ " mHz");
+    $("#radio-station").text("UNKNOWN." +" - FM "+(Number((Math.random() * (110.0 - 87.0) + 87.0).toFixed(2)))+ " mHz");
   });
 
   $("#button-radio-3").click(function()
@@ -138,4 +138,33 @@ function mainFunctions()
       $("#info").hide();
     }, 1200);
   });
+
+  $("#button-media-1").click(function()
+  {
+    $("#info").show();
+
+    setTimeout(function(){
+      $("#info").hide();
+    }, 1200);
+  });
+
+  $("#button-media-2").click(function()
+  {
+    $("#info").show();
+
+    setTimeout(function(){
+      $("#info").hide();
+    }, 1200);
+  });
+
+  $("#button-media-3").click(function()
+  {
+    $("#info").show();
+
+    setTimeout(function(){
+      $("#info").hide();
+    }, 1200);
+  });
+
+
 }

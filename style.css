@@ -4,6 +4,7 @@ body
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
 }
 
+/* panel z przyciskami po lewej */
 #left-panel
 {
   position: absolute;
@@ -14,6 +15,7 @@ body
   vertical-align: middle;
 }
 
+/* panel srodkowy */
 #center-panel
 {
   position: absolute;
@@ -24,6 +26,7 @@ body
   border-width: 1px;
 }
 
+/* panel z przyciskami po prawej */
 #right-panel
 {
   position: absolute;
@@ -32,20 +35,27 @@ body
   right: 0%;
 }
 
+/* czas wyswietlany na gorze */
 #time
 {
   position: fixed;
   left: 13.5%;
   z-index: 100;
+  font-weight: bold;
+  font-size: 25px;
 }
 
+/* temeratura wyswietlana na gorze */
 #temp
 {
   position: fixed;
-  right: 13.5%;
+  right: 14.5%;
   z-index: 100;
+  font-weight: bold;
+  font-size: 25px;
 }
 
+/* przyciski glowne (z lewej i prawej kolumny) */
 .buttony
 {
   text-align: center;
@@ -54,7 +64,7 @@ body
   height: 13%;
   border-radius: 20%;
   border-style: solid;
-  border-width: 1px;
+  border-width: 3px;
   font-size: 20px;
   margin-left: 5%;
   margin-top: 45%;
@@ -62,36 +72,11 @@ body
   font-weight: bold;
 }
 
-.buttony-radio
+/* napisy na przyciskach glownych */
+.sub-butt
 {
-  text-align: center;
-  vertical-align: middle;
-  width: 23%;
-  border-radius: 20%;
-  border-style: solid;
-  border-width: 1px;
-  font-size: 15px;
-  font-weight: bold;
-  position: fixed;
-  bottom: 5%;
-}
-
-#button-radio
-{
-  background-color: #FF9393;
-}
-
-#button-radio-1
-{
-  left:15%;
-}
-#button-radio-2
-{
-  left:39%;
-}
-#button-radio-3
-{
-  left:63%;
+margin-top: 25%;
+font-size: 30px;
 }
 
 .screen
@@ -104,25 +89,7 @@ body
   font-weight: bold;
 }
 
-#radio-screen
-{
-  display: block;
-}
-
-.radio-screen
-{
-  text-align: center;
-  vertical-align: middle;
-}
-
-#radio-station
-{
-  margin-left: 12%;
-  margin-top: 30%;
-  font-size: 40px;
-  font-weight: bold;
-}
-
+/* panel wyswietlany na caly ekran "brak noscikow" */
 #info
 {
   display: none;
@@ -131,17 +98,143 @@ body
   height: 90%;
   position: fixed;
   border-style: solid;
-  border-width: 1px;
+  border-width: 5px;
   background-color: #FF9393;
   left: 5%;
   top: 5%;
   text-align: center;
   vertical-align: middle;
-  font-size: 45px;
-  opacity: 0.8;
+  font-size: 70px;
+  font-weight: bold;
+  opacity: 0.9;
 }
-
 #info-sub
 {
   margin-top: 20%
+}
+
+/*--------------- radio------------------------------ */
+.buttony-radio
+{
+  text-align: center;
+  vertical-align: middle;
+  width: 23%;
+  border-radius: 20%;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 8%;
+}
+#button-radio
+{
+  background-color: #FF9393;
+}
+#button-radio-1
+{
+  left:15%;
+}
+#button-radio-2
+{
+  left:39%;
+}
+#button-radio-3
+{
+  left:63%;
+}
+#radio-screen
+{
+  display: block;
+}
+#radio-screen
+{
+  text-align: center;
+  vertical-align: middle;
+}
+#radio-station
+{
+  margin-top: 35%;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/*--------------- media------------------------------ */
+.buttony-media
+{
+  text-align: center;
+  vertical-align: middle;
+  width: 23%;
+  border-radius: 20%;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 8%;
+}
+#button-media-1
+{
+  left:15%;
+}
+#button-media-2
+{
+  left:39%;
+}
+#button-media-3
+{
+  left:63%;
+}
+#media-screen
+{
+  text-align: center;
+  vertical-align: middle;
+}
+#media-sub
+{
+  margin-top: 35%;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/*--------------- media------------------------------ */
+.buttony-nav
+{
+  text-align: center;
+  vertical-align: middle;
+  width: 23%;
+  border-radius: 20%;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 8%;
+}
+#button-nav-1
+{
+  left:15%;
+  background-color: white;
+}
+#button-nav-2
+{
+  left:39%;
+  background-color: white;
+}
+#button-nav-3
+{
+  left:63%;
+  background-color: white;
+}
+#nav-screen
+{
+  text-align: center;
+  vertical-align: middle;
+  background-image: url("mapa.png");
+}
+#nav-sub
+{
+  margin-top: 35%;
+  font-size: 60px;
+  font-weight: bold;
 }
