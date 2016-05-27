@@ -154,7 +154,7 @@ font-size: 30px;
 }
 #radio-station
 {
-  margin-top: 35%;
+  margin-top: 27%;
   font-size: 60px;
   font-weight: bold;
 }
@@ -192,12 +192,12 @@ font-size: 30px;
 }
 #media-sub
 {
-  margin-top: 35%;
+  margin-top: 27%;
   font-size: 60px;
   font-weight: bold;
 }
 
-/*--------------- media------------------------------ */
+/*--------------- nac------------------------------ */
 .buttony-nav
 {
   text-align: center;
@@ -237,4 +237,273 @@ font-size: 30px;
   margin-top: 35%;
   font-size: 60px;
   font-weight: bold;
+}
+
+/*--------------- klima------------------------------ */
+
+#strefa1
+{
+  position: fixed;
+  top: 15%;
+  left: 16%;
+  height: 37%;
+  width: 67%;
+  border-style: solid;
+  border-width: 4px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#strefa2
+{
+  position: fixed;
+  top: 56%;
+  left: 16%;
+  height: 37%;
+  width: 67%;
+  border-style: solid;
+  border-width: 4px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.klimanapis
+{
+#  margin-top: 15%;
+}
+
+.plusminus
+{
+  text-align: center;
+  vertical-align: middle;
+  width: 3%;
+  height: 5%;
+  border-radius: 20%;
+  border-style: solid;
+  border-width: 3px;
+  font-size:20px;
+
+  font-weight: bold;
+}
+
+#tempp1
+{
+  position: fixed;
+  top: 27%;
+  left:20%;
+}
+
+#nawiew1
+{
+  position: fixed;
+  top: 27%;
+  right: 20%;
+}
+
+#temp-1-p
+{
+  position: fixed;
+  top: 38%;
+  left: 36%;
+}
+
+#temp-1-m
+{
+  position: fixed;
+  top: 38%;
+  left: 21%;
+}
+
+#naw-1-p
+{
+  position: fixed;
+  top: 38%;
+  right: 22%;
+}
+
+#naw-1-m
+{
+  position: fixed;
+  top: 38%;
+  right: 36%;
+}
+
+#tempp2
+{
+  position: fixed;
+  top: 65%;
+  left:20%;
+}
+
+#nawiew2
+{
+  position: fixed;
+  top: 65%;
+  right: 20%;
+}
+
+#temp-2-p
+{
+  position: fixed;
+  top: 76%;
+  left: 36%;
+}
+
+#temp-2-m
+{
+  position: fixed;
+  top: 76%;
+  left: 21%;
+}
+
+#naw-2-p
+{
+  position: fixed;
+  top: 76%;
+  right: 22%;
+}
+
+#naw-2-m
+{
+  position: fixed;
+  top: 76%;
+  right: 36%;
+}
+
+/*--------------- tel------------------------------ */
+.buttony-tel
+{
+  text-align: center;
+  vertical-align: middle;
+  width: 23%;
+  border-radius: 20%;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 8%;
+}
+
+#button-tel-1
+{
+  left:15%;
+}
+#button-tel-2
+{
+  left:39%;
+}
+#button-tel-3
+{
+  left:63%;
+}
+
+#tel-screen
+{
+  text-align: center;
+  vertical-align: middle;
+}
+#tel-sub1
+{
+  position: fixed;
+  margin-top: 11%;
+  font-size: 35px;
+  font-weight: bold;
+  left:18%;
+}
+#tel-sub2
+{
+  position: fixed;
+  margin-top: 11%;
+  font-size: 35px;
+  font-weight: bold;
+  right:25%;
+}
+#tel-sub3
+{
+  position: fixed;
+  margin-top: 17%;
+  font-size: 35px;
+  font-weight: bold;
+  right:37%;
+}
+.klaw-butt
+{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 25%;
+  height: 23%;
+  border-radius: 20%;
+  border-style: solid;
+  border-width: 3px;
+  font-size:20px;
+
+  font-weight: bold;
+}
+
+#info-sub1
+{
+  position: fixed;
+  margin-top: 11%;
+  font-size: 45px;
+  font-weight: bold;
+  left:18%;
+}
+
+#info-sub2
+{
+  position: fixed;
+  margin-top: 15%;
+  font-size: 45px;
+  font-weight: bold;
+  left:18%;
+}
+
+#info-sub3
+{
+  position: fixed;
+  margin-top: 19%;
+  font-size: 45px;
+  font-weight: bold;
+  left:18%;
+}
+
+#info-sub4
+{
+  display: none;
+  position: fixed;
+  margin-top: 11%;
+  font-size: 45px;
+  font-weight: bold;
+  left:18%;
+}
+
+#info-sub5
+{
+  display: none;
+  position: fixed;
+  margin-top: 15%;
+  font-size: 45px;
+  font-weight: bold;
+  left:18%;
+}
+
+#info-sub6
+{
+  display: none;
+  position: fixed;
+  margin-top: 19%;
+  font-size: 45px;
+  font-weight: bold;
+  left:18%;
+}
+#info-sub7
+{
+  display: none;
+  position: fixed;
+  margin-top: 23%;
+  font-size: 45px;
+  font-weight: bold;
+  left:18%;
 }

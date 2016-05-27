@@ -56,6 +56,11 @@ app.on('activate', function () {
 
 function mainFunctions()
 {
+  var temp1 = 25;
+  var temp2 = 25;
+  var naw1 = 30;
+  var naw2 = 30;
+
   $("#button-radio").click(function()
   {
     $(".screen").hide();
@@ -166,5 +171,184 @@ function mainFunctions()
     }, 1200);
   });
 
+  $("#temp-1-p").click(function()
+  {
+    if(temp1<40){
+      temp1++;
+      $("#tempp1").text("Temperatura: "+temp1+"*C");
+    }
+  });
+
+  $("#temp-1-m").click(function()
+  {
+    if(temp1>10){
+      temp1--;
+      $("#tempp1").text("Temperatura: "+temp1+"*C");
+    }
+  });
+
+  $("#temp-2-p").click(function()
+  {
+    if(temp2<40){
+      temp2++;
+      $("#tempp2").text("Temperatura: "+temp2+"*C");
+    }
+  });
+
+  $("#temp-2-m").click(function()
+  {
+    if(temp2>10){
+      temp2--;
+      $("#tempp2").text("Temperatura: "+temp2+"*C");
+    }
+  });
+
+  $("#naw-1-p").click(function()
+  {
+    if(naw1<100){
+      naw1+=5;
+      $("#nawiew1").text("Siła nawiewu: "+naw1+"%");
+    }
+  });
+
+  $("#naw-1-m").click(function()
+  {
+    if(naw1>0){
+      naw1-=5;
+      $("#nawiew1").text("Siła nawiewu: "+naw1+"%");
+    }
+  });
+
+  $("#naw-2-p").click(function()
+  {
+    if(naw2<100){
+      naw2+=5;
+      $("#nawiew2").text("Siła nawiewu: "+naw2+"%");
+    }
+  });
+
+  $("#naw-2-m").click(function()
+  {
+    if(naw2>0){
+      naw2-=5;
+      $("#nawiew2").text("Siła nawiewu: "+naw2+"%");
+    }
+  });
+
+  $("#klaw-butt1").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"1");
+    }
+  });
+  $("#klaw-butt2").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"2");
+    }
+  });
+  $("#klaw-butt3").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"3");
+    }
+  });
+  $("#klaw-butt4").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"4");
+    }
+  });
+  $("#klaw-butt5").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"5");
+    }
+  });
+  $("#klaw-butt6").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"6");
+    }
+  });
+  $("#klaw-butt7").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"7");
+    }
+  });
+  $("#klaw-butt8").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"8");
+    }
+  });
+  $("#klaw-butt9").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"9");
+    }
+  });
+  $("#klaw-butt10").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"#");
+    }
+  });
+  $("#klaw-butt11").click(function()
+  {
+    if($("#tel-sub3").text().length<12){
+      $("#tel-sub3").text($("#tel-sub3").text()+"0");
+    }
+  });
+  $("#klaw-butt12").click(function()
+  {
+      $("#tel-sub3").text("");
+  });
+
+  $("#info-div1").click(function()
+  {
+      $("#info-sub1").show();
+      $("#info-sub2").show();
+      $("#info-sub3").show();
+
+      $("#info-sub4").hide();
+      $("#info-sub5").hide();
+      $("#info-sub6").hide();
+      $("#info-sub7").hide();
+
+      $("#info-sub8").hide();
+      $("#info-sub9").hide();
+  });
+
+  $("#info-div2").click(function()
+  {
+      $("#info-sub1").hide();
+      $("#info-sub2").hide();
+      $("#info-sub3").hide();
+
+      $("#info-sub4").show();
+      $("#info-sub5").show();
+      $("#info-sub6").show();
+      $("#info-sub7").show();
+
+      $("#info-sub8").hide();
+      $("#info-sub9").hide();
+  });
+
+  $("#info-div3").click(function()
+  {
+      $("#info-sub1").hide();
+      $("#info-sub2").hide();
+      $("#info-sub3").hide();
+
+      $("#info-sub4").hide();
+      $("#info-sub5").hide();
+      $("#info-sub6").hide();
+      $("#info-sub7").hide();
+
+      $("#info-sub8").show();
+      $("#info-sub9").show();
+  });
 
 }
