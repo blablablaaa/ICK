@@ -23,18 +23,18 @@
       <p id="temp">TEMPERATURA 15*C</p>
 
       <div id="radio-screen" class="screen">
-        <p id="radio-station">RADIO Z - FM 101,60 mHz</p>
-        <div id="button-radio-1" class="buttony-radio"><p>NASTĘPNA</p></div>
-        <div id="button-radio-2" class="buttony-radio"><p>POPRZEDNIA</p></div>
-        <div id="button-radio-3" class="buttony-radio"><p>NOŚNIKI ZEWNĘTRZNE</p></div>
+        <p id="radio-station">RADIO Z - FM 87,60 mHz</p>
+        <div id="button-radio-1" class="buttony-radio"><p>POPRZEDNIA</p></div>
+        <div id="button-radio-2" class="buttony-radio"><p>NASTĘPNA</p></div>
+        <div id="button-radio-3" class="buttony-radio"><p>AUTO-STROJENIE</p></div>
       </div>
 
       <div id="tel-screen" class="screen">
         <p id="tel-sub1">TWÓJ TELEFON</p>
-        <img src="phone.png" style="width:16%;height:50%;position:fixed;top:25%;left:18%">
+        <img src="phone.png" style="width:16%;height:50%;position:fixed;top:30%;left:20%">
         <p id="tel-sub2">WYBIERZ NUMER</p>
         <p id="tel-sub3"></p>
-        <div id="klaw" style="width:16%;height:30%;position:fixed;top:36%;left:50%">
+        <div id="klaw" style="width:16%;height:30%;position:fixed;top:40%;left:48%">
           <div id="klaw-butt1" class="klaw-butt"><p>1</p></div>
           <div id="klaw-butt2" class="klaw-butt"><p>2</p></div>
           <div id="klaw-butt3" class="klaw-butt"><p>3</p></div>
@@ -48,7 +48,7 @@
           <div id="klaw-butt11" class="klaw-butt"><p>0</p></div>
           <div id="klaw-butt12" class="klaw-butt"><p>C</p></div>
         </div>
-        <img src="call.png" style="width:12%;height:20%;position:fixed;top:40%;right:18%">
+        <img id="call" src="call.png" style="width:12%;height:20%;position:fixed;top:45%;right:18%">
 
         <div id="button-tel-1" class="buttony-tel"><p>SYNCHRONIZUJ TELEFON</p></div>
         <div id="button-tel-2" class="buttony-tel"><p>SMS</p></div>
@@ -72,30 +72,34 @@
           <div id="strefa1">
             <p class="klimanapis">PRZÓD</p>
             <p id="tempp1" class="tempp">Temperatura: 25*C</p>
-              <div id="temp-1-p" class="plusminus"><p>+</p></div>
-              <div id="temp-1-m" class="plusminus"><p>-</p></div>
+              <div id="temp-1-p" class="plusminus" style="background-color:#FF0000"><p>+</p></div>
+              <div id="temp-1-m" class="plusminus" style="background-color:#3300CC"><p>-</p></div>
             <p id="nawiew1" class="nawiew">Siła nawiewu: 30%</p>
-              <div id="naw-1-p" class="plusminus"><p>+</p></div>
-              <div id="naw-1-m" class="plusminus"><p>-</p></div>
+              <div id="naw-1-p" class="plusminus" style="background-color:#FF0000"><p>+</p></div>
+              <div id="naw-1-m" class="plusminus" style="background-color:#3300CC"><p>-</p></div>
           </div>
 
           <div id="strefa2">
             <p class="klimanapis">TYŁ</p>
             <p id="tempp2" class="tempp">Temperatura: 25*C</p>
-              <div id="temp-2-p" class="plusminus"><p>+</p></div>
-              <div id="temp-2-m" class="plusminus"><p>-</p></div>
+              <div id="temp-2-p" class="plusminus"style="background-color:#FF0000"><p>+</p></div>
+              <div id="temp-2-m" class="plusminus"style="background-color:#3300CC"><p>-</p></div>
             <p id="nawiew2" class="nawiew">Siła nawiewu: 30%</p>
-              <div id="naw-2-p" class="plusminus"><p>+</p></div>
-              <div id="naw-2-m" class="plusminus"><p>-</p></div>
+              <div id="naw-2-p" class="plusminus"style="background-color:#FF0000"><p>+</p></div>
+              <div id="naw-2-m" class="plusminus"style="background-color:#3300CC"><p>-</p></div>
           </div>
       </div>
 
       <div id="komf-screen" class="screen">
-        komf-screen
+        <div id="komf1" style="width:55%;border-style:solid;border-width:2px;height:10%;top:25%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white;"><p  style="margin-top:3%;">OŚWIETLENIE</p></div>
+        <div id="komf2" style="width:55%;border-style:solid;border-width:2px;height:10%;top:37%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white;"><p  style="margin-top:3%;">FOTELE</p></div>
+        <div id="komf3" style="width:55%;border-style:solid;border-width:2px;height:10%;top:49%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white;"><p  style="margin-top:3%;">TRYB SKRZYNI BIEGÓW</p></div>
+        <div id="komf4" style="width:55%;border-style:solid;border-width:2px;height:10%;top:61%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white;"><p  style="margin-top:3%;">OKNA</p></div>
+
       </div>
 
       <div id="info-screen" class="screen">
-        <p id="info-sub1">DYSTANS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;98&nbsp;KM</p>
+        <p id="info-sub1">DYSTANS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;98&nbsp;KM</p>
         <p id="info-sub2">ŚREDNIE SPALANIE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8,1&nbsp;L</p>
         <p id="info-sub3">CHWILOWE SPALANIE:&nbsp;&nbsp;&nbsp;0&nbsp;L</p>
           <div id="usterki" style="width:69%;height:30%;position:fixed;top:60%;left:15%;border-style:solid;border-width:2px;">
@@ -104,9 +108,9 @@
             <p>2. Dolej plynu do spryskiwaczy szyb</p>
             <img src="wykrzyknik.png" style="width:12%;height:20%;position:fixed;top:68%;right:18%">
           </div>
-          <div id="info-div1" style="width:20%;height:6%;position:fixed;top:20%;right:15%;border-style:solid;border-width:2px;text-align: center; vertical-align: middle; font-size:20px"><p>SPALANIE</p></div>
-          <div id="info-div2" style="width:20%;height:6%;position:fixed;top:28%;right:15%;border-style:solid;border-width:2px;text-align: center; vertical-align: middle; font-size:20px"><p>PANEL CIŚNIENIA OPON</p></div>
-          <div id="info-div3" style="width:20%;height:6%;position:fixed;top:36%;right:15%;border-style:solid;border-width:2px;text-align: center; vertical-align: middle; font-size:20px"><p>POGODA</p></div>
+          <div id="info-div1" style="width:20%;height:6%;position:fixed;top:20%;right:15%;border-style:solid;border-width:2px;text-align: center; vertical-align: middle; font-size:20px;background-color:#FF3300"><p style="margin-top:2%">SPALANIE</p></div>
+          <div id="info-div2" style="width:20%;height:6%;position:fixed;top:28%;right:15%;border-style:solid;border-width:2px;text-align: center; vertical-align: middle; font-size:20px;background-color:white"><p style="margin-top:2%">PANEL CIŚNIENIA OPON</p></div>
+          <div id="info-div3" style="width:20%;height:6%;position:fixed;top:36%;right:15%;border-style:solid;border-width:2px;text-align: center; vertical-align: middle; font-size:20px;background-color:white"><p style="margin-top:2%">POGODA</p></div>
           <p id="info-sub4">PRAWY PRZÓD:&nbsp;&nbsp;2,8&nbsp;Bar</p>
           <p id="info-sub5">LEWY PRZÓD:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2,8&nbsp;Bar</p>
           <p id="info-sub6">PRAWY TYŁ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2,8&nbsp;Bar</p>
@@ -116,10 +120,10 @@
       </div>
 
       <div id="menu-screen" class="screen">
-          <div id="men1" style="width:35%;border-style:solid;border-width:2px;height:10%;top:25%;left:30%;font-size:30px;position:fixed;text-align: center; vertical-align: middle"><p >ZMIANA JĘZYKA</p></div>
-          <div id="men2" style="width:35%;border-style:solid;border-width:2px;height:10%;top:37%;left:30%;font-size:30px;position:fixed;text-align: center; vertical-align: middle"><p >WIELKOŚĆ CZCIONKI</p></div>
-          <div id="men3" style="width:35%;border-style:solid;border-width:2px;height:10%;top:49%;left:30%;font-size:30px;position:fixed;text-align: center; vertical-align: middle"><p >JASNOŚĆ</p></div>
-          <div id="men4" style="width:35%;border-style:solid;border-width:2px;height:10%;top:61%;left:30%;font-size:30px;position:fixed;text-align: center; vertical-align: middle"><p >KOLORY</p></div>
+          <div id="men1" style="width:55%;border-style:solid;border-width:2px;height:10%;top:25%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white;"><p  style="margin-top:3%;">ZMIANA JĘZYKA</p></div>
+          <div id="men2" style="width:55%;border-style:solid;border-width:2px;height:10%;top:37%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white;"><p  style="margin-top:3%;">WIELKOŚĆ CZCIONKI</p></div>
+          <div id="men3" style="width:55%;border-style:solid;border-width:2px;height:10%;top:49%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white;"><p  style="margin-top:3%;">JASNOŚĆ</p></div>
+          <div id="men4" style="width:55%;border-style:solid;border-width:2px;height:10%;top:61%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white;"><p  style="margin-top:3%;">KOLORY</p></div>
 
       </div>
 
@@ -134,6 +138,34 @@
 
     <div id="info" class="info">
       <p id="info-sub">BRAK WYBRANEGO NOŚNIKA</p>
+    </div>
+
+    <div id="info2" class="info">
+      <p id="info-sub">BRAK POŁĄCZENIA GPS</p>
+    </div>
+
+    <div id="info3" class="info">
+      <p id="info-sub">NIEPOPRAWNY NUMER</p>
+    </div>
+
+    <div id="info4" class="info">
+      <p id="info-sub">BRAK INNYCH TELEFONÓW W ZASIĘGU</p>
+    </div>
+
+    <div id="ksiazka" class="info">
+      <p id="ksiazka-tyt" style="font-size:50px; margin-top:95px; margin-left:-95px">Książka telefoniczna</p>
+      <img src="x.png" id="ksiazka-x" style="width:8.4%;height:16%;position:fixed;top:10%;right:18%">
+      <div class="dzwon" id="dzwon1" style="width:55%;border-style:solid;border-width:2px;height:10%;top:25%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white; margin-top:90px"><p  style="margin-top:3%;">Agnieszka</p></div>
+      <div class="dzwon" id="dzwon2" style="width:55%;border-style:solid;border-width:2px;height:10%;top:37%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white; margin-top:90px"><p  style="margin-top:3%;">Ania</p></div>
+      <div class="dzwon" id="dzwon3" style="width:55%;border-style:solid;border-width:2px;height:10%;top:49%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white; margin-top:90px"><p  style="margin-top:3%;">Paweł</p></div>
+      <div class="dzwon" id="dzwon4" style="width:55%;border-style:solid;border-width:2px;height:10%;top:61%;left:22%;font-size:30px;position:fixed;text-align: center; vertical-align: middle; background-color:white; margin-top:90px"><p  style="margin-top:3%;">Roksana</p></div>
+    </div>
+
+    <div id="ring" class="info">
+      <p id="ksiazka-tyt2" style="font-size:50px; margin-top:150px; margin-left:-60px">Dzwonię do: Ania</p>
+      <img src="x.png" id="ksiazka-x2" style="width:8.4%;height:16%;position:fixed;top:10%;right:18%">
+      <img src="ring.gif" id="giff" style="width:25%;height:25%;position:fixed;top:45%;right:38%">
+      <p id="brakpoloczenia" style="font-size:70px; top: 30%; left:28.3%; position:fixed; display: none">Brak połączenia ...</p>
     </div>
 
 

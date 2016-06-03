@@ -10,7 +10,7 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 500})
+  mainWindow = new BrowserWindow({width: 1280, height: 720})
   //mainWindow = new BrowserWindow({width: 1920, height: 1080})
 
   // and load the index.html of the app.
@@ -61,86 +61,170 @@ function mainFunctions()
   var naw1 = 30;
   var naw2 = 30;
 
+  var radio = ["RADIO Z - FM 87,60 mHz", "RADIO SUPER - FM 89,50 mHz",  "RADIO KRZAK - FM 99,99 mHz", "RADIO AFRYKA - FM 100,70 mHz", "RADIO WROC - FM 105,10 mHz", "RADIO NEWS - FM 108,30 mHz", "RADIO GEEK - FM 110,10 mHz"];
+  var currentRadio = 0;
+
+  $("#ksiazka-x").click(function()
+  {
+    $("#button-tel").click();
+  });
+
+  $("#ksiazka-x2").click(function()
+  {
+    $("#button-tel").click();
+  });
+
   $("#button-radio").click(function()
   {
     $(".screen").hide();
     $("#radio-screen").show();
-    $(".buttony").css('background-color', '#CFCFCF');
-    $(this).css('background-color', '#FF9393');
+    $(".buttony").css('background-color', 'white');
+    $(this).css('background-color', '#FF3300');
+    $("#ksiazka").hide();
+    $("#time").show();
+    $("#temp").show();
+    $("#ring").hide();
   });
 
   $("#button-tel").click(function()
   {
     $(".screen").hide();
     $("#tel-screen").show();
-    $(".buttony").css('background-color', '#CFCFCF');
-    $(this).css('background-color', '#FF9393');
+    $(".buttony").css('background-color', 'white');
+    $(this).css('background-color', '#FF3300');
+    $("#ksiazka").hide();
+    $("#time").show();
+    $("#temp").show();
+    $("#button-tel-3").show();
+    $("#ring").hide();
   });
 
   $("#button-media").click(function()
   {
     $(".screen").hide();
     $("#media-screen").show();
-    $(".buttony").css('background-color', '#CFCFCF');
-    $(this).css('background-color', '#FF9393');
+    $(".buttony").css('background-color', 'white');
+    $(this).css('background-color', '#FF3300');
+    $("#ksiazka").hide();
+    $("#time").show();
+    $("#temp").show();
+    $("#ring").hide();
   });
 
   $("#button-nav").click(function()
   {
     $(".screen").hide();
     $("#nav-screen").show();
-    $(".buttony").css('background-color', '#CFCFCF');
-    $(this).css('background-color', '#FF9393');
+    $(".buttony").css('background-color', 'white');
+    $(this).css('background-color', '#FF3300');
+    $("#ksiazka").hide();
+    $("#time").show();
+    $("#temp").show();
+    $("#ring").hide();
   });
 
   $("#button-klima").click(function()
   {
     $(".screen").hide();
     $("#klima-screen").show();
-    $(".buttony").css('background-color', '#CFCFCF');
-    $(this).css('background-color', '#FF9393');
+    $(".buttony").css('background-color', 'white');
+    $(this).css('background-color', '#FF3300');
+    $("#ksiazka").hide();
+    $("#time").show();
+    $("#temp").show();
+    $("#ring").hide();
   });
 
   $("#button-komf").click(function()
   {
     $(".screen").hide();
     $("#komf-screen").show();
-    $(".buttony").css('background-color', '#CFCFCF');
-    $(this).css('background-color', '#FF9393');
+    $(".buttony").css('background-color', 'white');
+    $(this).css('background-color', '#FF3300');
+    $("#ksiazka").hide();
+    $("#time").show();
+    $("#temp").show();
+    $("#ring").hide();
   });
 
   $("#button-info").click(function()
   {
     $(".screen").hide();
     $("#info-screen").show();
-    $(".buttony").css('background-color', '#CFCFCF');
-    $(this).css('background-color', '#FF9393');
+    $(".buttony").css('background-color', 'white');
+    $(this).css('background-color', '#FF3300');
+    $("#ksiazka").hide();
+    $("#time").show();
+    $("#temp").show();
+    $("#ring").hide();
   });
 
   $("#button-menu").click(function()
   {
     $(".screen").hide();
     $("#menu-screen").show();
-    $(".buttony").css('background-color', '#CFCFCF');
+    $(".buttony").css('background-color', 'white');
     $(this).css('background-color', '#FF9393');
+    $("#ksiazka").hide();
+    $("#time").show();
+    $("#temp").show();
+    $("#ring").hide();
   });
 
   $("#button-radio-1").click(function()
   {
-    $("#radio-station").text("UNKNOWN" +" - FM "+(Number((Math.random() * (110.0 - 87.0) + 87.0).toFixed(2)))+ " mHz");
+    if(currentRadio==0)
+      currentRadio=6
+    else
+    currentRadio--;
+    $("#radio-station").text(radio[currentRadio]);
   });
 
   $("#button-radio-2").click(function()
   {
-    $("#radio-station").text("UNKNOWN." +" - FM "+(Number((Math.random() * (110.0 - 87.0) + 87.0).toFixed(2)))+ " mHz");
+    if(currentRadio==6)
+      currentRadio=0;
+    else
+      currentRadio++;
+    $("#radio-station").text(radio[currentRadio]);
   });
 
   $("#button-radio-3").click(function()
   {
-    $("#info").show();
+    $("#radio-station").text(radio[0]);
+  });
+
+  $("#call").click(function()
+  {
+    $("#info3").show();
 
     setTimeout(function(){
-      $("#info").hide();
+      $("#info3").hide();
+    }, 1200);
+  });
+
+  $("#button-tel-3").click(function() ///////////////
+  {
+    $("#ksiazka").show();
+    $("#time").hide();
+    $("#temp").hide();
+    $("#button-tel-3").hide();
+    //setTimeout(function(){
+    //  $("#info3").hide();
+    //}, 1200);
+  });
+
+  $("#button-tel-2").click(function()
+  {
+
+  });
+
+  $("#button-tel-1").click(function()
+  {
+    $("#info4").show();
+
+    setTimeout(function(){
+      $("#info4").hide();
     }, 1200);
   });
 
@@ -168,6 +252,15 @@ function mainFunctions()
 
     setTimeout(function(){
       $("#info").hide();
+    }, 1200);
+  });
+
+  $(".buttony-nav").click(function()
+  {
+    $("#info2").show();
+
+    setTimeout(function(){
+      $("#info2").hide();
     }, 1200);
   });
 
@@ -319,6 +412,10 @@ function mainFunctions()
 
       $("#info-sub8").hide();
       $("#info-sub9").hide();
+
+      $("#info-div2").css('background-color', 'white');
+      $("#info-div3").css('background-color', 'white');
+      $(this).css('background-color', '#FF3300');
   });
 
   $("#info-div2").click(function()
@@ -334,6 +431,10 @@ function mainFunctions()
 
       $("#info-sub8").hide();
       $("#info-sub9").hide();
+
+      $("#info-div1").css('background-color', 'white');
+      $("#info-div3").css('background-color', 'white');
+      $(this).css('background-color', '#FF3300');
   });
 
   $("#info-div3").click(function()
@@ -349,6 +450,87 @@ function mainFunctions()
 
       $("#info-sub8").show();
       $("#info-sub9").show();
+
+      $("#info-div1").css('background-color', 'white');
+      $("#info-div2").css('background-color', 'white');
+      $(this).css('background-color', '#FF3300');
+  });
+
+  $("#dzwon1").click(function()
+  {
+    $("#ksiazka-tyt2").text("Dzwonię do: Agnieszka");
+    $("#ksiazka").hide();
+    $("#ring").show();
+
+    setTimeout(function(){
+        $("#ksiazka-tyt2").hide();
+        $("#giff").hide();
+        $("#brakpoloczenia").show();
+    }, 4000);
+
+    setTimeout(function(){
+        $("#ksiazka-tyt2").show();
+        $("#giff").show();
+        $("#brakpoloczenia").hide();
+        $("#button-tel").click();
+    }, 6000);
+  });
+  $("#dzwon2").click(function()
+  {
+    $("#ksiazka-tyt2").text("Dzwonię do: Ania");
+    $("#ksiazka").hide();
+    $("#ring").show();
+
+    setTimeout(function(){
+        $("#ksiazka-tyt2").hide();
+        $("#giff").hide();
+        $("#brakpoloczenia").show();
+    }, 4000);
+
+    setTimeout(function(){
+        $("#ksiazka-tyt2").show();
+        $("#giff").show();
+        $("#brakpoloczenia").hide();
+        $("#button-tel").click();
+    }, 6000);
+  });
+  $("#dzwon3").click(function()
+  {
+    $("#ksiazka-tyt2").text("Dzwonię do: Paweł");
+    $("#ksiazka").hide();
+    $("#ring").show();
+
+    setTimeout(function(){
+        $("#ksiazka-tyt2").hide();
+        $("#giff").hide();
+        $("#brakpoloczenia").show();
+    }, 4000);
+
+    setTimeout(function(){
+        $("#ksiazka-tyt2").show();
+        $("#giff").show();
+        $("#brakpoloczenia").hide();
+        $("#button-tel").click();
+    }, 6000);
+  });
+  $("#dzwon4").click(function()
+  {
+    $("#ksiazka-tyt2").text("Dzwonię do: Roksana");
+    $("#ksiazka").hide();
+    $("#ring").show();
+
+    setTimeout(function(){
+        $("#ksiazka-tyt2").hide();
+        $("#giff").hide();
+        $("#brakpoloczenia").show();
+    }, 4000);
+
+    setTimeout(function(){
+        $("#ksiazka-tyt2").show();
+        $("#giff").show();
+        $("#brakpoloczenia").hide();
+        $("#button-tel").click();
+    }, 6000);
   });
 
 }
